@@ -9,7 +9,8 @@
 //   regiao: "Regiao",
 //   arcos: ["Arco 1", "Arco 2"],
 //   campanha: ["Campanha 1"],
-//   image: "/characters/nome-sobrenome.png"
+//   image: "/characters/nome-sobrenome.png",
+//   isAnimal: false
 // }
 export const characters = [
   {
@@ -22,7 +23,8 @@ export const characters = [
     regiao: "Australia",
     arcos: ["Casamento", "Torneio", "Gangues"],
     campanha: ["Ancient Works 1"],
-    image: "/characters/riki-walker.png"
+    image: "/characters/riki-walker.png",
+    isAnimal: false
   },
   {
     name: "Kalista Casanova",
@@ -34,7 +36,8 @@ export const characters = [
     regiao: "Althea",
     arcos: ["Casamento", "Gangues"],
     campanha: ["Ancient Works 1"],
-    image: "/characters/kalista-casanova.png"
+    image: "/characters/kalista-casanova.png",
+    isAnimal: false
   },
   {
     name: "Souma Kozato",
@@ -46,7 +49,8 @@ export const characters = [
     regiao: "Japao",
     arcos: ["Torneio", "Casamento", "Gangues"],
     campanha: ["Ancient Works 1"],
-    image: "/characters/souma-kozato.png"
+    image: "/characters/souma-kozato.png",
+    isAnimal: false
   },
   {
     name: "Ongaku",
@@ -58,7 +62,8 @@ export const characters = [
     regiao: "Althea",
     arcos: ["Casamento", "Gangues"],
     campanha: ["Ancient Works 1"],
-    image: "/characters/ongaku.png"
+    image: "/characters/ongaku.png",
+    isAnimal: false
   },
   {
     name: "Leon",
@@ -70,7 +75,8 @@ export const characters = [
     regiao: "Althea",
     arcos: ["Torneio", "Casamento", "Gangues"],
     campanha: ["Ancient Works 1"],
-    image: "/characters/leon.png"
+    image: "/characters/leon.png",
+    isAnimal: false
   },
   {
     name: "Vikir Belmont",
@@ -82,7 +88,8 @@ export const characters = [
     regiao: "Althea",
     arcos: ["Gangues"],
     campanha: ["Ancient Works 1"],
-    image: "/characters/vikir-belmont.png"
+    image: "/characters/vikir-belmont.png",
+    isAnimal: false
   },
   {
     name: "Kataryne Walker",
@@ -94,7 +101,8 @@ export const characters = [
     regiao: "Australia",
     arcos: ["Torneio", "Casamento", "Gangues"],
     campanha: ["Ancient Works 1"],
-    image: "/characters/kataryne-walker.png"
+    image: "/characters/kataryne-walker.png",
+    isAnimal: false
   },
   {
     name: "Tunin Aguiar",
@@ -106,7 +114,8 @@ export const characters = [
     regiao: "Althea",
     arcos: ["Casamento"],
     campanha: ["Ancient Works 1"],
-    image: "/characters/tunin-aguiar.png"
+    image: "/characters/tunin-aguiar.png",
+    isAnimal: false
   },
   {
     name: "Jiang Yanli",
@@ -118,7 +127,8 @@ export const characters = [
     regiao: "Japao",
     arcos: ["?"],
     campanha: ["Ancient Works 1"],
-    image: "/characters/jiang-yanli.png"
+    image: "/characters/jiang-yanli.png",
+    isAnimal: false
   },
   {
     name: "Ellie Yoon",
@@ -130,7 +140,8 @@ export const characters = [
     regiao: "Althea",
     arcos: ["?"],
     campanha: ["Ancient Works 1"],
-    image: "/characters/ellie-yoon.png"
+    image: "/characters/ellie-yoon.png",
+    isAnimal: false
   },
   {
     name: "Arthur White L. Cromwell",
@@ -142,7 +153,8 @@ export const characters = [
     regiao: "Londres",
     arcos: ["Ascensao de Callipof", "Bruxa do apocalipse", "Despertar de Bewolf"],
     campanha: ["Ancient Works 2"],
-    image: "/characters/arthur-white-l-cromwell.png"
+    image: "/characters/arthur-white-l-cromwell.png",
+    isAnimal: false
   },
   {
     name: "Yuji Showers",
@@ -154,7 +166,8 @@ export const characters = [
     regiao: "Londres",
     arcos: ["Ascensao de Callipof", "Bruxa do apocalipse", "Despertar de Bewolf"],
     campanha: ["Ancient Works 2"],
-    image: "/characters/yuji-showers.png"
+    image: "/characters/yuji-showers.png",
+    isAnimal: false
   },
   {
     name: "Neah Nightray",
@@ -166,7 +179,8 @@ export const characters = [
     regiao: "Londres",
     arcos: ["Ascensao de Callipof", "Bruxa do apocalipse", "Despertar de Bewolf"],
     campanha: ["Ancient Works 2"],
-    image: "/characters/neah-nightray.png"
+    image: "/characters/neah-nightray.png",
+    isAnimal: false
   },
   {
     name: "Tristan Pierre Le Blanc",
@@ -178,7 +192,8 @@ export const characters = [
     regiao: "Londres",
     arcos: ["Ascensao de Callipof", "Bruxa do apocalipse", "Despertar de Bewolf"],
     campanha: ["Ancient Works 2"],
-    image: "/characters/tristan-pierre-le-blanc.png"
+    image: "/characters/tristan-pierre-le-blanc.png",
+    isAnimal: false
   },
   {
     name: "Sasha Smirnov Sharapova Ivanov",
@@ -190,7 +205,8 @@ export const characters = [
     regiao: "Londres",
     arcos: ["Ascensao de Callipof", "Bruxa do apocalipse", "Despertar de Bewolf"],
     campanha: ["Ancient Works 2"],
-    image: "/characters/sasha-smirnov-sharapova-ivanov.png"
+    image: "/characters/sasha-smirnov-sharapova-ivanov.png",
+    isAnimal: false
   },
   {
     name: "Alexios Odsseus",
@@ -202,7 +218,8 @@ export const characters = [
     regiao: "Londres",
     arcos: ["Ascensao de Callipof", "Bruxa do apocalipse", "Despertar de Bewolf"],
     campanha: ["Ancient Works 2"],
-    image: "/characters/alexios-odsseus.png"
+    image: "/characters/alexios-odsseus.png",
+    isAnimal: false
   },
   {
     name: "Kaleb Thomas",
@@ -214,7 +231,8 @@ export const characters = [
     regiao: "Londres",
     arcos: ["Ascensao de Callipof", "Bruxa do apocalipse", "Despertar de Bewolf"],
     campanha: ["Ancient Works 2"],
-    image: "/characters/kaleb-thomas.png"
+    image: "/characters/kaleb-thomas.png",
+    isAnimal: false
   },
   {
     name: "Ada Lovelace",
@@ -226,7 +244,8 @@ export const characters = [
     regiao: "Londres",
     arcos: ["Ascensao de Callipof", "Bruxa do apocalipse", "Despertar de Bewolf"],
     campanha: ["Ancient Works 2"],
-    image: "/characters/ada-lovelace.png"
+    image: "/characters/ada-lovelace.png",
+    isAnimal: false
   },
   {
     name: "Daphne Turner Ulric",
@@ -238,6 +257,46 @@ export const characters = [
     regiao: "Londres",
     arcos: ["Ascensao de Callipof", "Bruxa do apocalipse", "Despertar de Bewolf"],
     campanha: ["Ancient Works 2"],
-    image: "/characters/daphne-turner-ulric.png"
+    image: "/characters/daphne-turner-ulric.png",
+    isAnimal: false
+  },
+  {
+    name: "Canis Lykaon",
+    magia: true,
+    idade: 0,
+    classeSocial: "Nenhuma",
+    status: "Linhagem Viva",
+    modoEspecial: false,
+    regiao: "Japao",
+    arcos: ["Torneio", "Casamento", "Gangues"],
+    campanha: ["Ancient Works 1"],
+    image: "/characters/canis-lykaon.png",
+    isAnimal: true
+  },
+  {
+    name: "Luna (Pantera)",
+    magia: false,
+    idade: 0,
+    classeSocial: "Nenhuma",
+    status: "Animal",
+    modoEspecial: false,
+    regiao: "Althea",
+    arcos: ["Torneio"],
+    campanha: ["Ancient Works 1"],
+    image: "/characters/luna-pantera.png",
+    isAnimal: true
+  },
+  {
+    name: "Timcampy",
+    magia: true,
+    idade: 0,
+    classeSocial: "Nobre",
+    status: "Animal",
+    modoEspecial: false,
+    regiao: "Althea",
+    arcos: ["Ascensao de Callipof", "Bruxa do apocalipse", "Despertar de Bewolf"],
+    campanha: ["Ancient Works 2"],
+    image: "/characters/timcampy.png",
+    isAnimal: true
   }
 ];

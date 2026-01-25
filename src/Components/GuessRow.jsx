@@ -35,6 +35,9 @@ export default function GuessRow({ guess, result, index = 0 }) {
           <span className={chipClass(result.magia)} style={chipDelay()}>
             Magia: {guess.magia ? "Sim" : "Nao"}
           </span>
+          <span className={chipClass(result.isAnimal)} style={chipDelay()}>
+            Animal: {guess.isAnimal ? "Sim" : "Nao"}
+          </span>
           <span className={chipClass(result.idade === "equal")} style={chipDelay()}>
             Idade: {idadeLabel()}
           </span>

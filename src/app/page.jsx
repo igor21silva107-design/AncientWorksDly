@@ -7,8 +7,13 @@ import GuessRow from "../Components/GuessRow";
 import GuessInput from "../Components/GuessInput";
 
 function getDailyIndexForDate(total, date) {
-  const start = new Date(date.getFullYear(), 0, 1);
-  const day = Math.floor((date - start) / 86400000) + 1;
+  const start = Date.UTC(date.getUTCFullYear(), 0, 1);
+  const now = Date.UTC(
+    date.getUTCFullYear(),
+    date.getUTCMonth(),
+    date.getUTCDate()
+  );
+  const day = Math.floor((now - start) / 86400000) + 1;
   return total > 0 ? day % total : 0;
 }
 
