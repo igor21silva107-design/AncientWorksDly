@@ -50,8 +50,12 @@ export default function GuessRow({ guess, result, index = 0 }) {
       <div className="guess-section">
         <div className="guess-label">Arcos</div>
         <div className="chip-row">
-          {guess.arcos.map((arco) => (
-            <span key={arco} className={chipClass(result.arcos)} style={chipDelay()}>
+          {guess.arcos.map((arco, index) => (
+            <span
+              key={arco}
+              className={chipClass(result.arcos?.[index])}
+              style={chipDelay()}
+            >
               {arco}
             </span>
           ))}

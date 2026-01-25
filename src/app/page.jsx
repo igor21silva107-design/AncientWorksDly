@@ -136,7 +136,8 @@ export default function Home() {
       result.modoEspecial &&
       result.regiao &&
       result.campanha &&
-      result.arcos &&
+      Array.isArray(result.arcos) &&
+      result.arcos.every(Boolean) &&
       result.idade === "equal";
     return filter === "perfect" ? isPerfect : !isPerfect;
   });
