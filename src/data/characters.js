@@ -87,5 +87,16 @@ export const characters = [
     regiao: "Australia",
     arcos: ["Torneio", "Casamento", "Gangues"],
     campanha: ["Ancient Works 1"]
+  },
+  {
+    name: "Tunin Aguiar",
+    magia: true,
+    idade: 15,
+    classeSocial: "Nobre",
+    status: "Feiticeiro",
+    modoEspecial: false,
+    regiao: "Althea",
+    arcos: ["Casamento"],
+    campanha: ["Ancient Works 1"]
   }
 ];
