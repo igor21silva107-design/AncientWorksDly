@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { characters } from "../data/characters";
 import { compareGuess } from "../utils/compareGuess";
 import GuessRow from "../Components/GuessRow";
@@ -30,8 +30,6 @@ function formatKey(date) {
 export default function Home() {
   const today = new Date();
   const todayKey = formatKey(today);
-  const dailyIndex = getDailyIndexForDate(characters.length, today);
-  const target = characters[dailyIndex];
   const todayLabel = formatDate(today);
 
   const [guesses, setGuesses] = useState([]);
@@ -40,12 +38,27 @@ export default function Home() {
   const [isWin, setIsWin] = useState(false);
   const [showSummary, setShowSummary] = useState(false);
   const [dailyStatus, setDailyStatus] = useState({});
+  const [dailyGuesses, setDailyGuesses] = useState({});
+  const [selectedDayKey, setSelectedDayKey] = useState(todayKey);
   const maxGuesses = 10;
   const progress = Math.min((guesses.length / maxGuesses) * 100, 100);
   const hintUnlockAt = 4;
   const hintUnlocked = guesses.length >= hintUnlockAt;
   const hintRemaining = Math.max(hintUnlockAt - guesses.length, 0);
   const storageKey = "rpgdle:dailyStatus";
+  const guessesKey = "rpgdle:dailyGuesses";
+
+  const selectedDate = useMemo(() => {
+    const [year, month, day] = selectedDayKey.split("-").map(Number);
+    return new Date(year, month - 1, day);
+  }, [selectedDayKey]);
+
+  const selectedDailyIndex = getDailyIndexForDate(
+    characters.length,
+    selectedDate
+  );
+  const target = characters[selectedDailyIndex];
+  const isToday = selectedDayKey === todayKey;
 
   useEffect(() => {
     const stored = localStorage.getItem(storageKey);
@@ -60,6 +73,22 @@ export default function Home() {
   useEffect(() => {
     localStorage.setItem(storageKey, JSON.stringify(dailyStatus));
   }, [dailyStatus]);
+
+  useEffect(() => {
+    const stored = localStorage.getItem(guessesKey);
+    if (!stored) return;
+    try {
+      const parsed = JSON.parse(stored);
+      setDailyGuesses(parsed);
+      setGuesses(parsed[todayKey] || []);
+    } catch {
+      setDailyGuesses({});
+    }
+  }, [todayKey]);
+
+  useEffect(() => {
+    localStorage.setItem(guessesKey, JSON.stringify(dailyGuesses));
+  }, [dailyGuesses]);
 
   useEffect(() => {
     if (!isWin && guesses.length >= maxGuesses) {
@@ -82,8 +111,13 @@ export default function Home() {
     if (alreadyGuessed) return;
 
     const comparison = compareGuess(character, target);
+    const nextGuesses = [
+      { guess: character, result: comparison },
+      ...guesses,
+    ];
 
-    setGuesses((prev) => [{ guess: character, result: comparison }, ...prev]);
+    setGuesses(nextGuesses);
+    setDailyGuesses((prev) => ({ ...prev, [todayKey]: nextGuesses }));
     if (character.name === target.name) {
       setIsWin(true);
       setDailyStatus((prev) => ({ ...prev, [todayKey]: "win" }));
@@ -146,7 +180,11 @@ export default function Home() {
             {guesses.length}/{maxGuesses}
           </div>
         </div>
-        <GuessInput characters={characters} onGuess={handleGuess} />
+        <GuessInput
+          characters={characters}
+          onGuess={handleGuess}
+          disabled={!isToday}
+        />
         <div className="hero-meta">
           <div className="meta-item">{todayLabel}</div>
           <div className="meta-item">
@@ -198,7 +236,9 @@ export default function Home() {
       <section className="guess-list">
         {filteredGuesses.length === 0 ? (
           <div className="empty-state">
-            Tente seu primeiro palpite para revelar pistas.
+            {isToday
+              ? "Tente seu primeiro palpite para revelar pistas."
+              : "Sem dados para esse dia."}
           </div>
         ) : (
           filteredGuesses.map(({ guess, result }, index) => (
@@ -273,13 +313,27 @@ export default function Home() {
                   : "summary-status none";
 
                 return (
-                  <div key={item.date.toISOString()} className="summary-item">
+                  <button
+                    key={item.date.toISOString()}
+                    type="button"
+                    className="summary-item"
+                    onClick={() => {
+                      setSelectedDayKey(item.key);
+                      setGuesses(dailyGuesses[item.key] || []);
+                      setIsWin(dailyStatus[item.key] === "win");
+                      setShowSummary(false);
+                    }}
+                  >
                     <div className="summary-date">{formatDate(item.date)}</div>
                     <div className="summary-name">
-                      {item.character ? item.character.name : "Sem personagem"}
+                      {status
+                        ? item.character
+                          ? item.character.name
+                          : "Sem personagem"
+                        : "??? ???"}
                     </div>
                     <div className={statusClass}>{statusLabel}</div>
-                  </div>
+                  </button>
                 );
               })}
             </div>

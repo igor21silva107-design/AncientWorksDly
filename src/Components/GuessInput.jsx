@@ -2,17 +2,18 @@
 
 import { useState } from "react";
 
-export default function GuessInput({ characters = [], onGuess }) {
+export default function GuessInput({ characters = [], onGuess, disabled }) {
   const [value, setValue] = useState("");
 
   const filtered =
-    value.length === 0
+    disabled || value.length === 0
       ? []
       : characters.filter((c) =>
           c.name.toLowerCase().startsWith(value.toLowerCase())
         );
 
   function handleKeyDown(e) {
+    if (disabled) return;
     if (e.key === "Tab" && filtered.length > 0) {
       e.preventDefault();
       setValue(filtered[0].name);
@@ -34,6 +35,7 @@ export default function GuessInput({ characters = [], onGuess }) {
         onChange={(e) => setValue(e.target.value)}
         onKeyDown={handleKeyDown}
         className="guess-input-field"
+        disabled={disabled}
       />
 
       {filtered.length > 0 && (
