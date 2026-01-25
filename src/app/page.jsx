@@ -289,13 +289,30 @@ export default function Home() {
           <div className="summary-card" onClick={(e) => e.stopPropagation()}>
             <div className="summary-header">
               <div className="summary-title">Sumario</div>
-              <button
-                className="summary-close"
-                type="button"
-                onClick={() => setShowSummary(false)}
-              >
-                Fechar
-              </button>
+              <div className="summary-actions">
+                <button
+                  className="summary-reset"
+                  type="button"
+                  onClick={() => {
+                    setDailyStatus({});
+                    setDailyGuesses({});
+                    setGuesses([]);
+                    setIsWin(false);
+                    localStorage.removeItem(storageKey);
+                    localStorage.removeItem(guessesKey);
+                    setShowSummary(false);
+                  }}
+                >
+                  Resetar progresso
+                </button>
+                <button
+                  className="summary-close"
+                  type="button"
+                  onClick={() => setShowSummary(false)}
+                >
+                  Fechar
+                </button>
+              </div>
             </div>
             <div className="summary-list">
               {history.map((item) => {
