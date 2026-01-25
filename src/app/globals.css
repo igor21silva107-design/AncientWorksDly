@@ -319,16 +319,21 @@ body::before {
 }
 
 .guess-image {
-  width: 160px;
+  width: 220px;
   align-self: center;
+  display: flex;
+  justify-content: center;
 }
 
 .guess-image img {
   width: 100%;
+  max-height: 280px;
   height: auto;
+  object-fit: contain;
   border-radius: 14px;
   border: 1px solid var(--panel-border);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.2);
   display: block;
 }
 
@@ -587,7 +592,7 @@ body::before {
   }
 
   .guess-image {
-    width: min(220px, 70%);
+    width: min(240px, 80%);
   }
 }
 
