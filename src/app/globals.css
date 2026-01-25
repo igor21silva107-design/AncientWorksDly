@@ -293,6 +293,33 @@ body::before {
   gap: 18px;
 }
 
+.guess-body {
+  display: flex;
+  align-items: stretch;
+  gap: 18px;
+}
+
+.guess-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.guess-image {
+  width: 160px;
+  align-self: center;
+}
+
+.guess-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  border: 1px solid var(--panel-border);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  display: block;
+}
+
 .guess-name {
   font-family: var(--font-title), Georgia, serif;
   font-size: 22px;
@@ -541,6 +568,14 @@ body::before {
 
   .hero-progress-label {
     text-align: left;
+  }
+
+  .guess-body {
+    flex-direction: column;
+  }
+
+  .guess-image {
+    width: min(220px, 70%);
   }
 }
 

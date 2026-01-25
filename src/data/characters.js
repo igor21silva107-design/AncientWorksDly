@@ -8,7 +8,8 @@
 //   modoEspecial: false,
 //   regiao: "Regiao",
 //   arcos: ["Arco 1", "Arco 2"],
-//   campanha: ["Campanha 1"]
+//   campanha: ["Campanha 1"],
+//   image: "/characters/nome-sobrenome.png"
 // }
 export const characters = [
   {
@@ -20,7 +21,8 @@ export const characters = [
     modoEspecial: true,
     regiao: "Australia",
     arcos: ["Casamento", "Torneio", "Gangues"],
-    campanha: ["Ancient Works 1"]
+    campanha: ["Ancient Works 1"],
+    image: "/characters/riki-walker.png"
   },
   {
     name: "Kalista Casanova",
@@ -31,7 +33,8 @@ export const characters = [
     modoEspecial: false,
     regiao: "Althea",
     arcos: ["Casamento", "Gangues"],
-    campanha: ["Ancient Works 1"]
+    campanha: ["Ancient Works 1"],
+    image: "/characters/kalista-casanova.png"
   },
   {
     name: "Souma Kozato",
@@ -42,7 +45,8 @@ export const characters = [
     modoEspecial: true,
     regiao: "Japao",
     arcos: ["Torneio", "Casamento", "Gangues"],
-    campanha: ["Ancient Works 1"]
+    campanha: ["Ancient Works 1"],
+    image: "/characters/souma-kozato.png"
   },
   {
     name: "Ongaku",
@@ -53,7 +57,8 @@ export const characters = [
     modoEspecial: false,
     regiao: "Althea",
     arcos: ["Casamento", "Gangues"],
-    campanha: ["Ancient Works 1"]
+    campanha: ["Ancient Works 1"],
+    image: "/characters/ongaku.png"
   },
   {
     name: "Leon",
@@ -64,7 +69,8 @@ export const characters = [
     modoEspecial: true,
     regiao: "Althea",
     arcos: ["Torneio", "Casamento", "Gangues"],
-    campanha: ["Ancient Works 1"]
+    campanha: ["Ancient Works 1"],
+    image: "/characters/leon.png"
   },
   {
     name: "Vikir Belmont",
@@ -75,7 +81,8 @@ export const characters = [
     modoEspecial: false,
     regiao: "Althea",
     arcos: ["Gangues"],
-    campanha: ["Ancient Works 1"]
+    campanha: ["Ancient Works 1"],
+    image: "/characters/vikir-belmont.png"
   },
   {
     name: "Kataryne Walker",
@@ -86,7 +93,8 @@ export const characters = [
     modoEspecial: false,
     regiao: "Australia",
     arcos: ["Torneio", "Casamento", "Gangues"],
-    campanha: ["Ancient Works 1"]
+    campanha: ["Ancient Works 1"],
+    image: "/characters/kataryne-walker.png"
   },
   {
     name: "Tunin Aguiar",
@@ -97,6 +105,7 @@ export const characters = [
     modoEspecial: false,
     regiao: "Althea",
     arcos: ["Casamento"],
-    campanha: ["Ancient Works 1"]
+    campanha: ["Ancient Works 1"],
+    image: "/characters/tunin-aguiar.png"
   }
 ];

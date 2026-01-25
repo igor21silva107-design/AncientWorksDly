@@ -26,7 +26,10 @@ export default function GuessRow({ guess, result, index = 0 }) {
         <div className="guess-status">{guess.status}</div>
       </header>
 
-      <div className="guess-section">
+      <div className="guess-body">
+        <div className="guess-info">
+
+          <div className="guess-section">
         <div className="guess-label">Atributos</div>
         <div className="chip-row">
           <span className={chipClass(result.magia)} style={chipDelay()}>
@@ -47,7 +50,7 @@ export default function GuessRow({ guess, result, index = 0 }) {
         </div>
       </div>
 
-      <div className="guess-section">
+          <div className="guess-section">
         <div className="guess-label">Arcos</div>
         <div className="chip-row">
           {guess.arcos.map((arco, index) => (
@@ -62,7 +65,7 @@ export default function GuessRow({ guess, result, index = 0 }) {
         </div>
       </div>
 
-      <div className="guess-section">
+          <div className="guess-section">
         <div className="guess-label">Campanha</div>
         <div className="chip-row">
           {guess.campanha.map((campanha) => (
@@ -75,6 +78,13 @@ export default function GuessRow({ guess, result, index = 0 }) {
             </span>
           ))}
         </div>
+      </div>
+        </div>
+        {guess.image && (
+          <div className="guess-image">
+            <img src={guess.image} alt={guess.name} />
+          </div>
+        )}
       </div>
     </article>
   );
