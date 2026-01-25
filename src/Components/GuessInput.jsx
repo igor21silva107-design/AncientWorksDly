@@ -48,7 +48,14 @@ export default function GuessInput({ characters = [], onGuess }) {
                 setValue("");
               }}
             >
-              {c.name}
+              {c.image && (
+                <img
+                  src={c.image}
+                  alt={c.name}
+                  className="guess-input-avatar"
+                />
+              )}
+              <span>{c.name}</span>
             </button>
           ))}
         </div>
