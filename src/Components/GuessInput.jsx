@@ -13,6 +13,12 @@ export default function GuessInput({ characters = [], onGuess }) {
         );
 
   function handleKeyDown(e) {
+    if (e.key === "Tab" && filtered.length > 0) {
+      e.preventDefault();
+      setValue(filtered[0].name);
+      return;
+    }
+
     if (e.key === "Enter") {
       onGuess(value);
       setValue("");
