@@ -6,6 +6,8 @@ export function compareGuess(guess, target) {
     modoEspecial: guess.modoEspecial === target.modoEspecial,
     regiao: guess.regiao === target.regiao,
     isAnimal: guess.isAnimal === target.isAnimal,
+    familyLeader: guess.familyLeader === target.familyLeader,
+    teamEthan: guess.teamEthan === target.teamEthan,
     campanha: guess.campanha.some((item) => target.campanha.includes(item)),
     arcos: guess.arcos.map((arco) => target.arcos.includes(arco)),
     idade:

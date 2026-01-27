@@ -10,7 +10,11 @@
 //   arcos: ["Arco 1", "Arco 2"],
 //   campanha: ["Campanha 1"],
 //   image: "/characters/nome-sobrenome.png",
-//   isAnimal: false
+//   isAnimal: false,
+//   magia: true, // use "unknown" se for desconhecido
+//   modoEspecial: false, // use "unknown" se for desconhecido
+//   familyLeader: false,
+//   teamEthan: false
 // }
 export const characters = [
   {
@@ -24,7 +28,9 @@ export const characters = [
     arcos: ["Casamento", "Torneio", "Gangues"],
     campanha: ["Ancient Works 1"],
     image: "/characters/riki-walker.png",
-    isAnimal: false
+    isAnimal: false,
+    familyLeader: false,
+    teamEthan: false
   },
   {
     name: "Kalista Casanova",
@@ -37,7 +43,9 @@ export const characters = [
     arcos: ["Casamento", "Gangues"],
     campanha: ["Ancient Works 1"],
     image: "/characters/kalista-casanova.png",
-    isAnimal: false
+    isAnimal: false,
+    familyLeader: true,
+    teamEthan: false
   },
   {
     name: "Souma Kozato",
@@ -50,7 +58,9 @@ export const characters = [
     arcos: ["Torneio", "Casamento", "Gangues"],
     campanha: ["Ancient Works 1"],
     image: "/characters/souma-kozato.png",
-    isAnimal: false
+    isAnimal: false,
+    familyLeader: true,
+    teamEthan: false
   },
   {
     name: "Ongaku",
@@ -63,7 +73,9 @@ export const characters = [
     arcos: ["Casamento", "Gangues"],
     campanha: ["Ancient Works 1"],
     image: "/characters/ongaku.png",
-    isAnimal: false
+    isAnimal: false,
+    familyLeader: false,
+    teamEthan: false
   },
   {
     name: "Leon",
@@ -76,7 +88,9 @@ export const characters = [
     arcos: ["Torneio", "Casamento", "Gangues"],
     campanha: ["Ancient Works 1"],
     image: "/characters/leon.png",
-    isAnimal: false
+    isAnimal: false,
+    familyLeader: false,
+    teamEthan: false
   },
   {
     name: "Vikir Belmont",
@@ -89,7 +103,9 @@ export const characters = [
     arcos: ["Gangues"],
     campanha: ["Ancient Works 1"],
     image: "/characters/vikir-belmont.png",
-    isAnimal: false
+    isAnimal: false,
+    familyLeader: false,
+    teamEthan: false
   },
   {
     name: "Kataryne Walker",
@@ -102,7 +118,9 @@ export const characters = [
     arcos: ["Torneio", "Casamento", "Gangues"],
     campanha: ["Ancient Works 1"],
     image: "/characters/kataryne-walker.png",
-    isAnimal: false
+    isAnimal: false,
+    familyLeader: false,
+    teamEthan: false
   },
   {
     name: "Tunin Aguiar",
@@ -112,10 +130,12 @@ export const characters = [
     status: "Feiticeiro",
     modoEspecial: false,
     regiao: "Althea",
-    arcos: ["Casamento"],
+    arcos: ["Casamento", "Gangues"],
     campanha: ["Ancient Works 1"],
     image: "/characters/tunin-aguiar.png",
-    isAnimal: false
+    isAnimal: false,
+    familyLeader: false,
+    teamEthan: false
   },
   {
     name: "Jiang Yanli",
@@ -128,20 +148,24 @@ export const characters = [
     arcos: ["?"],
     campanha: ["Ancient Works 1"],
     image: "/characters/jiang-yanli.png",
-    isAnimal: false
+    isAnimal: false,
+    familyLeader: false,
+    teamEthan: false
   },
   {
     name: "Ellie Yoon",
-    magia: true,
+    magia: false,
     idade: 15,
     classeSocial: "Plebeu",
     status: "Mestre das Armas",
     modoEspecial: false,
     regiao: "Althea",
-    arcos: ["?"],
+    arcos: ["?", "Torneio"],
     campanha: ["Ancient Works 1"],
     image: "/characters/ellie-yoon.png",
-    isAnimal: false
+    isAnimal: false,
+    familyLeader: false,
+    teamEthan: false
   },
   {
     name: "Arthur White L. Cromwell",
@@ -154,7 +178,9 @@ export const characters = [
     arcos: ["Ascensao de Callipof", "Bruxa do apocalipse", "Despertar de Bewolf"],
     campanha: ["Ancient Works 2"],
     image: "/characters/arthur-white-l-cromwell.png",
-    isAnimal: false
+    isAnimal: false,
+    familyLeader: false,
+    teamEthan: false
   },
   {
     name: "Yuji Showers",
@@ -167,7 +193,9 @@ export const characters = [
     arcos: ["Ascensao de Callipof", "Bruxa do apocalipse", "Despertar de Bewolf"],
     campanha: ["Ancient Works 2"],
     image: "/characters/yuji-showers.png",
-    isAnimal: false
+    isAnimal: false,
+    familyLeader: false,
+    teamEthan: false
   },
   {
     name: "Neah Nightray",
@@ -180,7 +208,9 @@ export const characters = [
     arcos: ["Ascensao de Callipof", "Bruxa do apocalipse", "Despertar de Bewolf"],
     campanha: ["Ancient Works 2"],
     image: "/characters/neah-nightray.png",
-    isAnimal: false
+    isAnimal: false,
+    familyLeader: false,
+    teamEthan: false
   },
   {
     name: "Tristan Pierre Le Blanc",
@@ -193,7 +223,9 @@ export const characters = [
     arcos: ["Ascensao de Callipof", "Bruxa do apocalipse", "Despertar de Bewolf"],
     campanha: ["Ancient Works 2"],
     image: "/characters/tristan-pierre-le-blanc.png",
-    isAnimal: false
+    isAnimal: false,
+    familyLeader: false,
+    teamEthan: false
   },
   {
     name: "Sasha Smirnov Sharapova Ivanov",
@@ -206,7 +238,9 @@ export const characters = [
     arcos: ["Ascensao de Callipof", "Bruxa do apocalipse", "Despertar de Bewolf"],
     campanha: ["Ancient Works 2"],
     image: "/characters/sasha-smirnov-sharapova-ivanov.png",
-    isAnimal: false
+    isAnimal: false,
+    familyLeader: false,
+    teamEthan: false
   },
   {
     name: "Alexios Odsseus",
@@ -219,7 +253,9 @@ export const characters = [
     arcos: ["Ascensao de Callipof", "Bruxa do apocalipse", "Despertar de Bewolf"],
     campanha: ["Ancient Works 2"],
     image: "/characters/alexios-odsseus.png",
-    isAnimal: false
+    isAnimal: false,
+    familyLeader: false,
+    teamEthan: false
   },
   {
     name: "Kaleb Thomas",
@@ -232,7 +268,9 @@ export const characters = [
     arcos: ["Ascensao de Callipof", "Bruxa do apocalipse", "Despertar de Bewolf"],
     campanha: ["Ancient Works 2"],
     image: "/characters/kaleb-thomas.png",
-    isAnimal: false
+    isAnimal: false,
+    familyLeader: false,
+    teamEthan: false
   },
   {
     name: "Ada Lovelace",
@@ -245,7 +283,9 @@ export const characters = [
     arcos: ["Ascensao de Callipof", "Bruxa do apocalipse", "Despertar de Bewolf"],
     campanha: ["Ancient Works 2"],
     image: "/characters/ada-lovelace.png",
-    isAnimal: false
+    isAnimal: false,
+    familyLeader: false,
+    teamEthan: false
   },
   {
     name: "Daphne Turner Ulric",
@@ -258,7 +298,9 @@ export const characters = [
     arcos: ["Ascensao de Callipof", "Bruxa do apocalipse", "Despertar de Bewolf"],
     campanha: ["Ancient Works 2"],
     image: "/characters/daphne-turner-ulric.png",
-    isAnimal: false
+    isAnimal: false,
+    familyLeader: false,
+    teamEthan: false
   },
   {
     name: "Canis Lykaon",
@@ -271,7 +313,9 @@ export const characters = [
     arcos: ["Torneio", "Casamento", "Gangues"],
     campanha: ["Ancient Works 1"],
     image: "/characters/canis-lykaon.png",
-    isAnimal: true
+    isAnimal: true,
+    familyLeader: false,
+    teamEthan: false
   },
   {
     name: "Luna (Pantera)",
@@ -284,7 +328,9 @@ export const characters = [
     arcos: ["Torneio"],
     campanha: ["Ancient Works 1"],
     image: "/characters/luna-pantera.png",
-    isAnimal: true
+    isAnimal: true,
+    familyLeader: false,
+    teamEthan: false
   },
   {
     name: "Timcampy",
@@ -297,6 +343,113 @@ export const characters = [
     arcos: ["Ascensao de Callipof", "Bruxa do apocalipse", "Despertar de Bewolf"],
     campanha: ["Ancient Works 2"],
     image: "/characters/timcampy.png",
-    isAnimal: true
+    isAnimal: true,
+    familyLeader: false,
+    teamEthan: false
+  },
+  {
+    name: "Sirius Chronowell",
+    magia: "unknown",
+    idade: 15,
+    classeSocial: "Nobre",
+    status: "Desconhecida",
+    modoEspecial: "unknown",
+    regiao: "Althea",
+    arcos: ["Torneio", "Gangues"],
+    campanha: ["Ancient Works 1"],
+    image: "/characters/sirius-chronowell.png",
+    isAnimal: false,
+    familyLeader: false,
+    teamEthan: false
+  },
+  {
+    name: "Regina Mercedes",
+    magia: false,
+    idade: 15,
+    classeSocial: "Nobre",
+    status: "Mestre das Armas",
+    modoEspecial: false,
+    regiao: "Althea",
+    arcos: ["Torneio", "Gangues"],
+    campanha: ["Ancient Works 1"],
+    image: "/characters/regina-mercedes.png",
+    isAnimal: false,
+    familyLeader: false,
+    teamEthan: false
+  },
+  {
+    name: "Elizabeth Rosenberk",
+    magia: "unknown",
+    idade: 15,
+    classeSocial: "Nobre",
+    status: "Desconhecida",
+    modoEspecial: false,
+    regiao: "Althea",
+    arcos: ["Torneio", "Gangues"],
+    campanha: ["Ancient Works 1"],
+    image: "/characters/elizabeth-rosenberk.png",
+    isAnimal: false,
+    familyLeader: true,
+    teamEthan: false
+  },
+  {
+    name: "Yaze Periergos",
+    magia: "unknown",
+    idade: 15,
+    classeSocial: "Nobre",
+    status: "Perguntar pro namorado lindo",
+    modoEspecial: false,
+    regiao: "Althea",
+    arcos: ["Casamento", "Torneio", "Gangues"],
+    campanha: ["Ancient Works 1"],
+    image: "/characters/yaze-periergos.png",
+    isAnimal: false,
+    familyLeader: false,
+    teamEthan: false
+  },
+  {
+    name: "Iris Harwey",
+    magia: "unknown",
+    idade: 15,
+    classeSocial: "Nobre",
+    status: "Perguntar pro namorado lindo",
+    modoEspecial: false,
+    regiao: "Althea",
+    arcos: ["Casamento", "Torneio", "Gangues"],
+    campanha: ["Ancient Works 1"],
+    image: "/characters/iris-harwey.png",
+    isAnimal: false,
+    familyLeader: false,
+    teamEthan: false
+  },
+  {
+    name: "Siegfried Nibelung",
+    magia: false,
+    idade: 15,
+    classeSocial: "Plebeu",
+    status: "Nobre",
+    modoEspecial: false,
+    regiao: "Althea",
+    arcos: ["Casamento", "Torneio", "Gangues"],
+    campanha: ["Ancient Works 1"],
+    image: "/characters/siegfried-nibelung.png",
+    isAnimal: false,
+    familyLeader: false,
+    teamEthan: false
+  },
+  {
+    name: "Alex Stollen",
+    magia: true,
+    idade: 15,
+    classeSocial: "Nobre",
+    status: "Perguntar pro namorado lindo",
+    modoEspecial: false,
+    regiao: "Althea",
+    arcos: ["Casamento", "Torneio", "Gangues"],
+    campanha: ["Ancient Works 1"],
+    image: "/characters/alex-stollen.png",
+    isAnimal: false,
+    familyLeader: false,
+    teamEthan: false
   }
 ];

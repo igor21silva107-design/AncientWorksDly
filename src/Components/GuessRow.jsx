@@ -1,5 +1,7 @@
 export default function GuessRow({ guess, result, index = 0 }) {
   const chipClass = (ok) => `chip ${ok ? "chip-ok" : "chip-bad"}`;
+  const formatYesNo = (value) =>
+    value === "unknown" ? "Desconhecido" : value ? "Sim" : "Nao";
   let chipIndex = 0;
   const chipDelay = () => {
     const delay = chipIndex * 120;
@@ -33,10 +35,16 @@ export default function GuessRow({ guess, result, index = 0 }) {
         <div className="guess-label">Atributos</div>
         <div className="chip-row">
           <span className={chipClass(result.magia)} style={chipDelay()}>
-            Magia: {guess.magia ? "Sim" : "Nao"}
+            Magia: {formatYesNo(guess.magia)}
           </span>
           <span className={chipClass(result.isAnimal)} style={chipDelay()}>
             Animal: {guess.isAnimal ? "Sim" : "Nao"}
+          </span>
+          <span className={chipClass(result.familyLeader)} style={chipDelay()}>
+            Lider de familia: {guess.familyLeader ? "Sim" : "Nao"}
+          </span>
+          <span className={chipClass(result.teamEthan)} style={chipDelay()}>
+            Time Ethan: {guess.teamEthan ? "Sim" : "Nao"}
           </span>
           <span className={chipClass(result.idade === "equal")} style={chipDelay()}>
             Idade: {idadeLabel()}
@@ -45,7 +53,7 @@ export default function GuessRow({ guess, result, index = 0 }) {
             Classe: {guess.classeSocial}
           </span>
           <span className={chipClass(result.modoEspecial)} style={chipDelay()}>
-            Modo especial: {guess.modoEspecial ? "Sim" : "Nao"}
+            Modo especial: {formatYesNo(guess.modoEspecial)}
           </span>
           <span className={chipClass(result.regiao)} style={chipDelay()}>
             Regiao: {guess.regiao}
