@@ -13,7 +13,6 @@
 //   isAnimal: false,
 //   magia: true, // use "unknown" se for desconhecido
 //   modoEspecial: false, // use "unknown" se for desconhecido
-//   familyLeader: false,
 //   teamEthan: false
 // }
 export const characters = [
@@ -29,7 +28,6 @@ export const characters = [
     campanha: ["Ancient Works 1"],
     image: "/characters/riki-walker.png",
     isAnimal: false,
-    familyLeader: false,
     teamEthan: false
   },
   {
@@ -59,7 +57,6 @@ export const characters = [
     campanha: ["Ancient Works 1"],
     image: "/characters/souma-kozato.png",
     isAnimal: false,
-    familyLeader: true,
     teamEthan: false
   },
   {
@@ -74,7 +71,6 @@ export const characters = [
     campanha: ["Ancient Works 1"],
     image: "/characters/ongaku.png",
     isAnimal: false,
-    familyLeader: false,
     teamEthan: false
   },
   {
@@ -89,7 +85,6 @@ export const characters = [
     campanha: ["Ancient Works 1"],
     image: "/characters/leon.png",
     isAnimal: false,
-    familyLeader: false,
     teamEthan: false
   },
   {
@@ -104,7 +99,6 @@ export const characters = [
     campanha: ["Ancient Works 1"],
     image: "/characters/vikir-belmont.png",
     isAnimal: false,
-    familyLeader: false,
     teamEthan: false
   },
   {
@@ -119,7 +113,6 @@ export const characters = [
     campanha: ["Ancient Works 1"],
     image: "/characters/kataryne-walker.png",
     isAnimal: false,
-    familyLeader: false,
     teamEthan: false
   },
   {
@@ -134,7 +127,6 @@ export const characters = [
     campanha: ["Ancient Works 1"],
     image: "/characters/tunin-aguiar.png",
     isAnimal: false,
-    familyLeader: false,
     teamEthan: false
   },
   {
@@ -149,7 +141,6 @@ export const characters = [
     campanha: ["Ancient Works 1"],
     image: "/characters/jiang-yanli.png",
     isAnimal: false,
-    familyLeader: false,
     teamEthan: false
   },
   {
@@ -164,7 +155,6 @@ export const characters = [
     campanha: ["Ancient Works 1"],
     image: "/characters/ellie-yoon.png",
     isAnimal: false,
-    familyLeader: false,
     teamEthan: false
   },
   {
@@ -179,7 +169,6 @@ export const characters = [
     campanha: ["Ancient Works 2"],
     image: "/characters/arthur-white-l-cromwell.png",
     isAnimal: false,
-    familyLeader: false,
     teamEthan: false
   },
   {
@@ -194,7 +183,6 @@ export const characters = [
     campanha: ["Ancient Works 2"],
     image: "/characters/yuji-showers.png",
     isAnimal: false,
-    familyLeader: false,
     teamEthan: false
   },
   {
@@ -209,7 +197,6 @@ export const characters = [
     campanha: ["Ancient Works 2"],
     image: "/characters/neah-nightray.png",
     isAnimal: false,
-    familyLeader: false,
     teamEthan: false
   },
   {
@@ -224,7 +211,6 @@ export const characters = [
     campanha: ["Ancient Works 2"],
     image: "/characters/tristan-pierre-le-blanc.png",
     isAnimal: false,
-    familyLeader: false,
     teamEthan: false
   },
   {
@@ -239,7 +225,6 @@ export const characters = [
     campanha: ["Ancient Works 2"],
     image: "/characters/sasha-smirnov-sharapova-ivanov.png",
     isAnimal: false,
-    familyLeader: false,
     teamEthan: false
   },
   {
@@ -254,7 +239,6 @@ export const characters = [
     campanha: ["Ancient Works 2"],
     image: "/characters/alexios-odsseus.png",
     isAnimal: false,
-    familyLeader: false,
     teamEthan: false
   },
   {
@@ -269,7 +253,6 @@ export const characters = [
     campanha: ["Ancient Works 2"],
     image: "/characters/kaleb-thomas.png",
     isAnimal: false,
-    familyLeader: false,
     teamEthan: false
   },
   {
@@ -284,7 +267,6 @@ export const characters = [
     campanha: ["Ancient Works 2"],
     image: "/characters/ada-lovelace.png",
     isAnimal: false,
-    familyLeader: false,
     teamEthan: false
   },
   {
@@ -299,7 +281,6 @@ export const characters = [
     campanha: ["Ancient Works 2"],
     image: "/characters/daphne-turner-ulric.png",
     isAnimal: false,
-    familyLeader: false,
     teamEthan: false
   },
   {
@@ -314,7 +295,6 @@ export const characters = [
     campanha: ["Ancient Works 1"],
     image: "/characters/canis-lykaon.png",
     isAnimal: true,
-    familyLeader: false,
     teamEthan: false
   },
   {
@@ -329,7 +309,6 @@ export const characters = [
     campanha: ["Ancient Works 1"],
     image: "/characters/luna-pantera.png",
     isAnimal: true,
-    familyLeader: false,
     teamEthan: false
   },
   {
@@ -344,7 +323,6 @@ export const characters = [
     campanha: ["Ancient Works 2"],
     image: "/characters/timcampy.png",
     isAnimal: true,
-    familyLeader: false,
     teamEthan: false
   },
   {
@@ -359,7 +337,6 @@ export const characters = [
     campanha: ["Ancient Works 1"],
     image: "/characters/sirius-chronowell.png",
     isAnimal: false,
-    familyLeader: false,
     teamEthan: false
   },
   {
@@ -374,7 +351,6 @@ export const characters = [
     campanha: ["Ancient Works 1"],
     image: "/characters/regina-mercedes.png",
     isAnimal: false,
-    familyLeader: false,
     teamEthan: false
   },
   {
@@ -404,7 +380,6 @@ export const characters = [
     campanha: ["Ancient Works 1"],
     image: "/characters/yaze-periergos.png",
     isAnimal: false,
-    familyLeader: false,
     teamEthan: false
   },
   {
@@ -419,7 +394,6 @@ export const characters = [
     campanha: ["Ancient Works 1"],
     image: "/characters/iris-harwey.png",
     isAnimal: false,
-    familyLeader: false,
     teamEthan: false
   },
   {
@@ -429,12 +403,12 @@ export const characters = [
     classeSocial: "Plebeu",
     status: "Nobre",
     modoEspecial: false,
+    esquizofrenico: true,
     regiao: "Althea",
     arcos: ["Casamento", "Torneio", "Gangues"],
     campanha: ["Ancient Works 1"],
     image: "/characters/siegfried-nibelung.png",
     isAnimal: false,
-    familyLeader: false,
     teamEthan: false
   },
   {
@@ -449,7 +423,208 @@ export const characters = [
     campanha: ["Ancient Works 1"],
     image: "/characters/alex-stollen.png",
     isAnimal: false,
-    familyLeader: false,
+    teamEthan: false
+  },
+  {
+    name: "Scarlet Hellstain",
+    magia: true,
+    idade: 16,
+    classeSocial: "Nobre",
+    status: "Mestre das Armas",
+    modoEspecial: false,
+    regiao: "Aldeia Shizenyo",
+    arcos: ["Casamento"],
+    campanha: ["Ancient Works 1"],
+    image: "/characters/scarlet-hellstain.png",
+    isAnimal: false,
+    teamEthan: false
+  },
+  {
+    name: "Gaku Harwer",
+    magia: false,
+    idade: 16,
+    classeSocial: "Nobre",
+    status: "Mestre das Armas",
+    modoEspecial: false,
+    cavaleiroMagico: true,
+    regiao: "Althea",
+    arcos: ["Casamento", "Gangues"],
+    campanha: ["Ancient Works 1", "Ancient Works 2"],
+    image: "/characters/gaku-harwer.png",
+    isAnimal: false,
+    teamEthan: false
+  },
+  {
+    name: "Gray",
+    magia: false,
+    idade: 16,
+    classeSocial: "Plebeu",
+    status: "Normal",
+    modoEspecial: false,
+    fantasma: true,
+    regiao: "Althea",
+    arcos: ["Casamento", "Gangues"],
+    campanha: ["Ancient Works 1"],
+    image: "/characters/gray.png",
+    isAnimal: false,
+    teamEthan: false
+  },
+  {
+    name: "Fergus Balma",
+    magia: true,
+    idade: 15,
+    classeSocial: "Nobre",
+    status: "Feiticeiro",
+    modoEspecial: false,
+    regiao: "Althea",
+    arcos: ["Casamento", "Gangues"],
+    campanha: ["Ancient Works 1"],
+    image: "/characters/fergus-balma.png",
+    isAnimal: false,
+    teamEthan: true
+  },
+  {
+    name: "Durant Durant",
+    magia: true,
+    idade: 16,
+    classeSocial: "Nobre",
+    status: "Feiticeiro",
+    modoEspecial: false,
+    regiao: "Althea",
+    arcos: ["Casamento", "Gangues"],
+    campanha: ["Ancient Works 1"],
+    image: "/characters/durant-durant.png",
+    isAnimal: false,
+    teamEthan: false
+  },
+  {
+    name: "Adric Casanova",
+    magia: true,
+    idade: 17,
+    classeSocial: "Nobre",
+    status: "Nobre",
+    modoEspecial: false,
+    regiao: "Althea",
+    arcos: ["Casamento", "Gangues"],
+    campanha: ["Ancient Works 1"],
+    image: "/characters/adric-casanova.png",
+    isAnimal: false,
+    teamEthan: false
+  },
+  {
+    name: "Kaiser Red Rose",
+    magia: true,
+    idade: 16,
+    classeSocial: "Familia Real",
+    status: "Mestre das Armas",
+    modoEspecial: "unknown",
+    regiao: "Australia",
+    arcos: ["Gangues"],
+    campanha: ["Ancient Works 1"],
+    image: "/characters/kaiser-red-rose.gif",
+    isAnimal: false,
+    teamEthan: false
+  },
+  {
+    name: "Raviery Knov",
+    magia: true,
+    idade: 15,
+    classeSocial: "Nobre",
+    status: "Feiticeiro",
+    modoEspecial: false,
+    vicePresidente: true,
+    regiao: "Russia",
+    arcos: ["Gangues"],
+    campanha: ["Ancient Works 1"],
+    image: "/characters/raviery-knov.png",
+    isAnimal: false,
+    teamEthan: false
+  },
+  {
+    name: "Lilian Hiroshi",
+    magia: false,
+    idade: 15,
+    classeSocial: "Plebeio",
+    status: "Feiticeiro",
+    modoEspecial: false,
+    esquizofrenico: true,
+    regiao: "Althea",
+    arcos: ["Gangues"],
+    campanha: ["Ancient Works 1"],
+    image: "/characters/lilian-hiroshi.png",
+    isAnimal: false,
+    teamEthan: false
+  },
+  {
+    name: "Kuhn Xi Junpei",
+    magia: false,
+    idade: 15,
+    classeSocial: "Nobre",
+    status: "Resistencia",
+    modoEspecial: false,
+    regiao: "China",
+    arcos: ["?"],
+    campanha: ["Ancient Works 1"],
+    image: "/characters/kuhn-xi-junpei.png",
+    isAnimal: false,
+    teamEthan: false
+  },
+  {
+    name: "Black Antrove",
+    magia: true,
+    idade: 15,
+    classeSocial: "Nobre",
+    status: "Normal",
+    modoEspecial: false,
+    linhagemTransformacao: true,
+    regiao: "Althea",
+    arcos: ["Torneio", "Casamento", "Gangues"],
+    campanha: ["Ancient Works 1"],
+    image: "/characters/black-antrove.png",
+    isAnimal: false,
+    teamEthan: true
+  },
+  {
+    name: "Fuwa Leroy",
+    magia: true,
+    idade: 16,
+    classeSocial: "Nobre",
+    status: "Normal",
+    modoEspecial: false,
+    regiao: "Althea",
+    arcos: ["Casamento", "Gangues"],
+    campanha: ["Ancient Works 1"],
+    image: "/characters/fuwa-leroy.png",
+    isAnimal: false,
+    teamEthan: true
+  },
+  {
+    name: "Cross Wolf",
+    magia: true,
+    idade: 16,
+    classeSocial: "Nobre",
+    status: "Resistencia",
+    modoEspecial: false,
+    regiao: "Althea",
+    arcos: ["Casamento", "Gangues"],
+    campanha: ["Ancient Works 1"],
+    image: "/characters/cross-wolf.png",
+    isAnimal: false,
+    teamEthan: false
+  },
+  {
+    name: "Rita Agares",
+    magia: true,
+    idade: 15,
+    classeSocial: "Nobre",
+    status: "Mestre das Armas",
+    modoEspecial: false,
+    princesaAgares: true,
+    regiao: "Althea",
+    arcos: ["Torneio", "Casamento", "Gangues"],
+    campanha: ["Ancient Works 1"],
+    image: "/characters/rita-agares.png",
+    isAnimal: false,
     teamEthan: false
   }
 ];

@@ -47,6 +47,7 @@ export default function Home() {
   const [selectedDayKey, setSelectedDayKey] = useState(todayKey);
   const maxGuesses = 10;
   const progress = Math.min((guesses.length / maxGuesses) * 100, 100);
+  const winProgress = Math.max(progress, 8);
   const hintUnlockAt = 4;
   const hintUnlocked = guesses.length >= hintUnlockAt;
   const hintRemaining = Math.max(hintUnlockAt - guesses.length, 0);
@@ -64,6 +65,20 @@ export default function Home() {
   );
   const target = characters[selectedDailyIndex];
   const activeKey = selectedDayKey;
+
+  function handleResetProgress() {
+    const ok = window.confirm(
+      "Isso vai limpar o progresso salvo neste navegador. Continuar?"
+    );
+    if (!ok) return;
+    localStorage.removeItem(storageKey);
+    localStorage.removeItem(guessesKey);
+    setDailyStatus({});
+    setDailyGuesses({});
+    setGuesses([]);
+    setIsWin(false);
+    setShowSummary(false);
+  }
 
   useEffect(() => {
     const stored = localStorage.getItem(storageKey);
@@ -263,10 +278,18 @@ export default function Home() {
           onClick={() => setIsWin(false)}
         >
           <div className="win-card" onClick={(e) => e.stopPropagation()}>
-            <div className="win-title">Vitoria!</div>
-            <div className="win-subtitle">
-              Voce acertou o personagem do dia.
+            <div className="win-stamp">Encontrado</div>
+            <div className="win-progress">
+              <div
+                className="win-progress-fill"
+                style={{ width: `${winProgress}%` }}
+              />
+              <div className="win-progress-label">
+                {guesses.length}/{maxGuesses}
+              </div>
             </div>
+            <div className="win-meta">Em {guesses.length} chutes.</div>
+            <div className="win-lead">O personagem de hoje e</div>
             <div className="win-name">{target.name}</div>
             <button
               className="win-close"
@@ -289,13 +312,22 @@ export default function Home() {
           <div className="summary-card" onClick={(e) => e.stopPropagation()}>
             <div className="summary-header">
               <div className="summary-title">Sumario</div>
-              <button
-                className="summary-close"
-                type="button"
-                onClick={() => setShowSummary(false)}
-              >
-                Fechar
-              </button>
+              <div className="summary-actions">
+                <button
+                  className="summary-reset"
+                  type="button"
+                  onClick={handleResetProgress}
+                >
+                  Resetar progresso
+                </button>
+                <button
+                  className="summary-close"
+                  type="button"
+                  onClick={() => setShowSummary(false)}
+                >
+                  Fechar
+                </button>
+              </div>
             </div>
             <div className="summary-list">
               {history.map((item) => {

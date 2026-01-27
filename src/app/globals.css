@@ -423,41 +423,91 @@ body::before {
 }
 
 .win-card {
+  width: min(560px, 94vw);
   background: rgba(12, 13, 16, 0.96);
-  border: 1px solid rgba(242, 74, 74, 0.45);
-  border-radius: 20px;
-  padding: 28px 32px;
+  border: 1px solid rgba(56, 196, 112, 0.35);
+  border-radius: 24px;
+  padding: 36px 34px 30px;
   text-align: center;
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6);
   animation: win-pop 520ms ease forwards;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
 }
 
-.win-title {
+.win-stamp {
   font-family: var(--font-title), Georgia, serif;
-  font-size: 34px;
+  font-size: 38px;
   letter-spacing: 2px;
-  color: var(--accent-strong);
+  color: #e9fff2;
   text-transform: uppercase;
+  padding: 10px 26px;
+  border-radius: 10px;
+  border: 2px solid rgba(80, 220, 140, 0.6);
+  box-shadow: 0 0 0 4px rgba(80, 220, 140, 0.08),
+    0 18px 40px rgba(0, 0, 0, 0.55);
+  background: linear-gradient(
+    180deg,
+    rgba(80, 220, 140, 0.18),
+    rgba(80, 220, 140, 0.06)
+  );
+  transform: rotate(-2deg);
 }
 
-.win-subtitle {
-  margin-top: 6px;
-  color: var(--muted);
-  font-size: 15px;
+.win-progress {
+  margin-top: 4px;
+  width: min(420px, 90%);
+  height: 20px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.win-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #a31616, #d03535);
+  box-shadow: 0 0 18px rgba(208, 53, 53, 0.35);
+}
+
+.win-progress-label {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.win-meta {
+  color: #7fb7ff;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.win-lead {
+  margin-top: 4px;
+  font-size: 20px;
+  font-family: var(--font-title), Georgia, serif;
 }
 
 .win-name {
-  margin-top: 16px;
-  font-size: 20px;
-  letter-spacing: 1px;
+  font-size: 32px;
+  font-family: var(--font-title), Georgia, serif;
+  letter-spacing: 1.2px;
+  text-shadow: 0 0 24px rgba(80, 220, 140, 0.18);
 }
 
 .win-close {
-  margin-top: 18px;
-  border: 1px solid rgba(242, 74, 74, 0.6);
-  background: rgba(242, 74, 74, 0.2);
+  margin-top: 8px;
+  border: 1px solid rgba(80, 220, 140, 0.55);
+  background: rgba(80, 220, 140, 0.16);
   color: var(--text);
-  padding: 8px 18px;
+  padding: 9px 22px;
   border-radius: 999px;
   font-size: 14px;
   text-transform: uppercase;
@@ -489,11 +539,27 @@ body::before {
   margin-bottom: 16px;
 }
 
+.summary-actions {
+  display: flex;
+  gap: 8px;
+}
+
 .summary-title {
   font-family: var(--font-title), Georgia, serif;
   font-size: 20px;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+.summary-reset {
+  border: 1px solid rgba(242, 74, 74, 0.6);
+  background: rgba(242, 74, 74, 0.16);
+  color: var(--text);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .summary-close {

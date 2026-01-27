@@ -8,6 +8,13 @@ export function compareGuess(guess, target) {
     isAnimal: guess.isAnimal === target.isAnimal,
     familyLeader: guess.familyLeader === target.familyLeader,
     teamEthan: guess.teamEthan === target.teamEthan,
+    cavaleiroMagico: Boolean(guess.cavaleiroMagico) === Boolean(target.cavaleiroMagico),
+    vicePresidente: Boolean(guess.vicePresidente) === Boolean(target.vicePresidente),
+    esquizofrenico: Boolean(guess.esquizofrenico) === Boolean(target.esquizofrenico),
+    linhagemTransformacao:
+      Boolean(guess.linhagemTransformacao) === Boolean(target.linhagemTransformacao),
+    princesaAgares: Boolean(guess.princesaAgares) === Boolean(target.princesaAgares),
+    fantasma: Boolean(guess.fantasma) === Boolean(target.fantasma),
     campanha: guess.campanha.some((item) => target.campanha.includes(item)),
     arcos: guess.arcos.map((arco) => target.arcos.includes(arco)),
     idade:
