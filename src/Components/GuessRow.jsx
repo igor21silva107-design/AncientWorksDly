@@ -40,30 +40,52 @@ export default function GuessRow({ guess, result, index = 0 }) {
           <span className={chipClass(result.isAnimal)} style={chipDelay()}>
             Animal: {guess.isAnimal ? "Sim" : "Nao"}
           </span>
-          <span className={chipClass(result.familyLeader)} style={chipDelay()}>
-            Lider de familia: {guess.familyLeader ? "Sim" : "Nao"}
-          </span>
-          <span className={chipClass(result.teamEthan)} style={chipDelay()}>
-            Time Ethan: {guess.teamEthan ? "Sim" : "Nao"}
-          </span>
-          <span className={chipClass(result.cavaleiroMagico)} style={chipDelay()}>
-            Cavaleiro magico: {guess.cavaleiroMagico ? "Sim" : "Nao"}
-          </span>
-          <span className={chipClass(result.vicePresidente)} style={chipDelay()}>
-            Vice-presidente: {guess.vicePresidente ? "Sim" : "Nao"}
-          </span>
-          <span className={chipClass(result.esquizofrenico)} style={chipDelay()}>
-            Esquizofrenico: {guess.esquizofrenico ? "Sim" : "Nao"}
-          </span>
-          <span className={chipClass(result.linhagemTransformacao)} style={chipDelay()}>
-            Linhagem transformacao: {guess.linhagemTransformacao ? "Sim" : "Nao"}
-          </span>
-          <span className={chipClass(result.princesaAgares)} style={chipDelay()}>
-            Princesa dos Agares: {guess.princesaAgares ? "Sim" : "Nao"}
-          </span>
-          <span className={chipClass(result.fantasma)} style={chipDelay()}>
-            Fantasma: {guess.fantasma ? "Sim" : "Nao"}
-          </span>
+          {guess.familyLeader && (
+            <span className={chipClass(result.familyLeader)} style={chipDelay()}>
+              Lider de familia: Sim
+            </span>
+          )}
+          {guess.teamEthan && (
+            <span className={chipClass(result.teamEthan)} style={chipDelay()}>
+              Time Ethan: Sim
+            </span>
+          )}
+          {guess.cavaleiroMagico && (
+            <span
+              className={chipClass(result.cavaleiroMagico)}
+              style={chipDelay()}
+            >
+              Cavaleiro magico: Sim
+            </span>
+          )}
+          {guess.vicePresidente && (
+            <span className={chipClass(result.vicePresidente)} style={chipDelay()}>
+              Vice-presidente: Sim
+            </span>
+          )}
+          {guess.esquizofrenico && (
+            <span className={chipClass(result.esquizofrenico)} style={chipDelay()}>
+              Esquizofrenico: Sim
+            </span>
+          )}
+          {guess.linhagemTransformacao && (
+            <span
+              className={chipClass(result.linhagemTransformacao)}
+              style={chipDelay()}
+            >
+              Linhagem transformacao: Sim
+            </span>
+          )}
+          {guess.princesaAgares && (
+            <span className={chipClass(result.princesaAgares)} style={chipDelay()}>
+              Princesa dos Agares: Sim
+            </span>
+          )}
+          {guess.fantasma && (
+            <span className={chipClass(result.fantasma)} style={chipDelay()}>
+              Fantasma: Sim
+            </span>
+          )}
           <span className={chipClass(result.idade === "equal")} style={chipDelay()}>
             Idade: {idadeLabel()}
           </span>
