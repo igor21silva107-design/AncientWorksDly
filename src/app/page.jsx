@@ -358,13 +358,6 @@ export default function Home() {
                 <button
                   className="summary-reset"
                   type="button"
-                  onClick={() => resetLocalProgress({ confirm: true })}
-                >
-                  Resetar progresso
-                </button>
-                <button
-                  className="summary-reset"
-                  type="button"
                   onClick={handleResetAll}
                 >
                   Reset global
