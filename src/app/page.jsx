@@ -53,6 +53,7 @@ export default function Home() {
   const hintRemaining = Math.max(hintUnlockAt - guesses.length, 0);
   const storageKey = "rpgdle:dailyStatus";
   const guessesKey = "rpgdle:dailyGuesses";
+  const resetVersionKey = "rpgdle:resetVersion";
 
   const selectedDate = useMemo(() => {
     const [year, month, day] = selectedDayKey.split("-").map(Number);
@@ -66,11 +67,13 @@ export default function Home() {
   const target = characters[selectedDailyIndex];
   const activeKey = selectedDayKey;
 
-  function handleResetProgress() {
-    const ok = window.confirm(
-      "Isso vai limpar o progresso salvo neste navegador. Continuar?"
-    );
-    if (!ok) return;
+  function resetLocalProgress({ confirm } = { confirm: true }) {
+    if (confirm) {
+      const ok = window.confirm(
+        "Isso vai limpar o progresso salvo neste navegador. Continuar?"
+      );
+      if (!ok) return;
+    }
     localStorage.removeItem(storageKey);
     localStorage.removeItem(guessesKey);
     setDailyStatus({});
@@ -78,6 +81,26 @@ export default function Home() {
     setGuesses([]);
     setIsWin(false);
     setShowSummary(false);
+  }
+
+  async function handleResetAll() {
+    const token = window.prompt("Token admin para resetar todos os usuarios:");
+    if (!token) return;
+    try {
+      const res = await fetch("/api/admin/reset", {
+        method: "POST",
+        headers: { "x-admin-token": token },
+      });
+      if (!res.ok) {
+        window.alert("Token invalido ou erro no servidor.");
+        return;
+      }
+      const data = await res.json();
+      localStorage.setItem(resetVersionKey, String(data.resetVersion ?? 0));
+      resetLocalProgress({ confirm: false });
+    } catch {
+      window.alert("Falha ao resetar.");
+    }
   }
 
   useEffect(() => {
@@ -89,6 +112,25 @@ export default function Home() {
       setDailyStatus({});
     }
   }, []);
+
+  useEffect(() => {
+    async function syncReset() {
+      try {
+        const res = await fetch("/api/reset-version", { cache: "no-store" });
+        if (!res.ok) return;
+        const data = await res.json();
+        const remoteVersion = Number(data.resetVersion ?? 0);
+        const localVersion = Number(localStorage.getItem(resetVersionKey) ?? 0);
+        if (remoteVersion !== localVersion) {
+          localStorage.setItem(resetVersionKey, String(remoteVersion));
+          resetLocalProgress({ confirm: false });
+        }
+      } catch {
+        // ignore
+      }
+    }
+    syncReset();
+  }, [resetVersionKey]);
 
   useEffect(() => {
     localStorage.setItem(storageKey, JSON.stringify(dailyStatus));
@@ -316,9 +358,16 @@ export default function Home() {
                 <button
                   className="summary-reset"
                   type="button"
-                  onClick={handleResetProgress}
+                  onClick={() => resetLocalProgress({ confirm: true })}
                 >
                   Resetar progresso
+                </button>
+                <button
+                  className="summary-reset"
+                  type="button"
+                  onClick={handleResetAll}
+                >
+                  Reset global
                 </button>
                 <button
                   className="summary-close"
