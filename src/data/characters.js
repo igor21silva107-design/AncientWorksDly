@@ -29,7 +29,7 @@ export const characters = [
     image: "/characters/riki-walker.png",
     isAnimal: false,
   },
-{
+  {
     name: "Kalista Casanova",
     magia: true,
     idade: 16,
@@ -44,7 +44,7 @@ export const characters = [
     image: "/characters/kalista-casanova.png",
     isAnimal: false,
   },
-{
+  {
     name: "Souma Kozato",
     magia: true,
     idade: 16,
@@ -57,7 +57,7 @@ export const characters = [
     image: "/characters/souma-kozato.png",
     isAnimal: false,
   },
-{
+  {
     name: "Ongaku",
     magia: true,
     idade: 15,
@@ -71,7 +71,7 @@ export const characters = [
     image: "/characters/ongaku.png",
     isAnimal: false,
   },
-{
+  {
     name: "Leon",
     magia: false,
     idade: 15,
@@ -84,7 +84,7 @@ export const characters = [
     image: "/characters/leon.png",
     isAnimal: false,
   },
-{
+  {
     name: "Vikir Belmont",
     magia: true,
     idade: 15,
@@ -97,7 +97,7 @@ export const characters = [
     image: "/characters/vikir-belmont.png",
     isAnimal: false,
   },
-{
+  {
     name: "Kataryne Walker",
     magia: true,
     idade: 15,
@@ -110,7 +110,7 @@ export const characters = [
     image: "/characters/kataryne-walker.png",
     isAnimal: false,
   },
-{
+  {
     name: "Tunin Aguiar",
     magia: true,
     idade: 15,
@@ -123,7 +123,7 @@ export const characters = [
     image: "/characters/tunin-aguiar.png",
     isAnimal: false,
   },
-{
+  {
     name: "Jiang Yanli",
     magia: true,
     idade: 16,
@@ -136,7 +136,7 @@ export const characters = [
     image: "/characters/jiang-yanli.png",
     isAnimal: false,
   },
-{
+  {
     name: "Ellie Yoon",
     magia: false,
     idade: 15,
@@ -149,7 +149,7 @@ export const characters = [
     image: "/characters/ellie-yoon.png",
     isAnimal: false,
   },
-{
+  {
     name: "Arthur White L. Cromwell",
     magia: true,
     idade: 15,
@@ -162,7 +162,7 @@ export const characters = [
     image: "/characters/arthur-white-l-cromwell.png",
     isAnimal: false,
   },
-{
+  {
     name: "Yuji Showers",
     magia: true,
     idade: 15,
@@ -176,7 +176,7 @@ export const characters = [
     image: "/characters/yuji-showers.png",
     isAnimal: false,
   },
-{
+  {
     name: "Neah Nightray",
     magia: true,
     idade: 15,
@@ -189,7 +189,7 @@ export const characters = [
     image: "/characters/neah-nightray.png",
     isAnimal: false,
   },
-{
+  {
     name: "Tristan Pierre Le Blanc",
     magia: true,
     idade: 15,
@@ -202,7 +202,7 @@ export const characters = [
     image: "/characters/tristan-pierre-le-blanc.png",
     isAnimal: false,
   },
-{
+  {
     name: "Sasha Smirnov Sharapova Ivanov",
     magia: true,
     idade: 16,
@@ -215,7 +215,7 @@ export const characters = [
     image: "/characters/sasha-smirnov-sharapova-ivanov.png",
     isAnimal: false,
   },
-{
+  {
     name: "Alexios Odsseus",
     magia: true,
     idade: 16,
@@ -228,7 +228,7 @@ export const characters = [
     image: "/characters/alexios-odsseus.png",
     isAnimal: false,
   },
-{
+  {
     name: "Kaleb Thomas",
     magia: true,
     idade: 15,
@@ -241,7 +241,7 @@ export const characters = [
     image: "/characters/kaleb-thomas.png",
     isAnimal: false,
   },
-{
+  {
     name: "Ada Lovelace",
     magia: true,
     idade: 16,
@@ -254,7 +254,7 @@ export const characters = [
     image: "/characters/ada-lovelace.png",
     isAnimal: false,
   },
-{
+  {
     name: "Daphne Turner Ulric",
     magia: true,
     idade: 16,
@@ -267,7 +267,7 @@ export const characters = [
     image: "/characters/daphne-turner-ulric.png",
     isAnimal: false,
   },
-{
+  {
     name: "Canis Lykaon",
     magia: true,
     idade: 0,
@@ -280,7 +280,7 @@ export const characters = [
     image: "/characters/canis-lykaon.png",
     isAnimal: true,
   },
-{
+  {
     name: "Luna (Pantera)",
     magia: false,
     idade: 0,
@@ -293,7 +293,7 @@ export const characters = [
     image: "/characters/luna-pantera.png",
     isAnimal: true,
   },
-{
+  {
     name: "Timcampy",
     magia: true,
     idade: 0,
@@ -306,7 +306,7 @@ export const characters = [
     image: "/characters/timcampy.png",
     isAnimal: true,
   },
-{
+  {
     name: "Sirius Chronowell",
     magia: "unknown",
     idade: 15,
@@ -319,7 +319,7 @@ export const characters = [
     image: "/characters/sirius-chronowell.png",
     isAnimal: false,
   },
-{
+  {
     name: "Regina Mercedes",
     magia: false,
     idade: 15,
@@ -332,7 +332,7 @@ export const characters = [
     image: "/characters/regina-mercedes.png",
     isAnimal: false,
   },
-{
+  {
     name: "Elizabeth Rosenberk",
     magia: "unknown",
     idade: 15,
@@ -346,7 +346,7 @@ export const characters = [
     image: "/characters/elizabeth-rosenberk.png",
     isAnimal: false,
   },
-{
+  {
     name: "Yaze Periergos",
     magia: "unknown",
     idade: 15,
@@ -359,7 +359,7 @@ export const characters = [
     image: "/characters/yaze-periergos.png",
     isAnimal: false,
   },
-{
+  {
     name: "Iris Harwey",
     magia: "unknown",
     idade: 15,
@@ -372,7 +372,7 @@ export const characters = [
     image: "/characters/iris-harwey.png",
     isAnimal: false,
   },
-{
+  {
     name: "Siegfried Nibelung",
     magia: false,
     idade: 15,
@@ -386,7 +386,7 @@ export const characters = [
     image: "/characters/siegfried-nibelung.png",
     isAnimal: false,
   },
-{
+  {
     name: "Alex Stollen",
     magia: true,
     idade: 15,
@@ -399,7 +399,7 @@ export const characters = [
     image: "/characters/alex-stollen.png",
     isAnimal: false,
   },
-{
+  {
     name: "Scarlet Hellstain",
     magia: true,
     idade: 16,
@@ -412,7 +412,7 @@ export const characters = [
     image: "/characters/scarlet-hellstain.png",
     isAnimal: false,
   },
-{
+  {
     name: "Gaku Harwer",
     magia: false,
     idade: 16,
@@ -426,7 +426,7 @@ export const characters = [
     image: "/characters/gaku-harwer.png",
     isAnimal: false,
   },
-{
+  {
     name: "Gray",
     magia: false,
     idade: 16,
@@ -440,7 +440,7 @@ export const characters = [
     image: "/characters/gray.png",
     isAnimal: false,
   },
-{
+  {
     name: "Fergus Balma",
     magia: true,
     idade: 15,
@@ -454,7 +454,7 @@ export const characters = [
     image: "/characters/fergus-balma.png",
     isAnimal: false,
   },
-{
+  {
     name: "Durant Durant",
     magia: true,
     idade: 16,
@@ -468,7 +468,7 @@ export const characters = [
     image: "/characters/durant-durant.png",
     isAnimal: false,
   },
-{
+  {
     name: "Adric Casanova",
     magia: true,
     idade: 17,
@@ -481,7 +481,7 @@ export const characters = [
     image: "/characters/adric-casanova.png",
     isAnimal: false,
   },
-{
+  {
     name: "Kaiser Red Rose",
     magia: true,
     idade: 16,
@@ -494,7 +494,7 @@ export const characters = [
     image: "/characters/kaiser-red-rose.gif",
     isAnimal: false,
   },
-{
+  {
     name: "Raviery Knov",
     magia: true,
     idade: 15,
@@ -508,7 +508,7 @@ export const characters = [
     image: "/characters/raviery-knov.png",
     isAnimal: false,
   },
-{
+  {
     name: "Lilian Hiroshi",
     magia: false,
     idade: 15,
@@ -522,7 +522,7 @@ export const characters = [
     image: "/characters/lilian-hiroshi.png",
     isAnimal: false,
   },
-{
+  {
     name: "Kuhn Xi Junpei",
     magia: false,
     idade: 15,
@@ -535,7 +535,7 @@ export const characters = [
     image: "/characters/kuhn-xi-junpei.png",
     isAnimal: false,
   },
-{
+  {
     name: "Black Antrove",
     magia: true,
     idade: 15,
@@ -550,7 +550,7 @@ export const characters = [
     image: "/characters/black-antrove.png",
     isAnimal: false,
   },
-{
+  {
     name: "Fuwa Leroy",
     magia: true,
     idade: 16,
@@ -564,7 +564,7 @@ export const characters = [
     image: "/characters/fuwa-leroy.png",
     isAnimal: false,
   },
-{
+  {
     name: "Cross Wolf",
     magia: true,
     idade: 16,
@@ -577,7 +577,7 @@ export const characters = [
     image: "/characters/cross-wolf.png",
     isAnimal: false,
   },
-{
+  {
     name: "Rita Agares",
     magia: true,
     idade: 15,
@@ -591,8 +591,7 @@ export const characters = [
     campanha: ["Ancient Works 1"],
     image: "/characters/rita-agares.png",
     isAnimal: false,
-  }
-
+  },
   {
     name: "Mia von Astley",
     magia: false,
