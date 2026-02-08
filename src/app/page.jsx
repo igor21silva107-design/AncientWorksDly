@@ -204,10 +204,12 @@ export default function Home() {
     return filter === "perfect" ? isPerfect : !isPerfect;
   });
 
-  const recentDays = 7;
-  const history = Array.from({ length: recentDays }, (_, offset) => {
-    const date = new Date();
-    date.setDate(date.getDate() - offset);
+  const monthStart = new Date(today.getFullYear(), today.getMonth(), 1);
+  const daysInView =
+    Math.floor((today - monthStart) / 86400000) + 1;
+  const history = Array.from({ length: daysInView }, (_, offset) => {
+    const date = new Date(today);
+    date.setDate(today.getDate() - offset);
     const safeIndex = getDailyIndexForDate(characters.length, date);
     return {
       date,
